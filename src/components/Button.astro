@@ -2,8 +2,8 @@
 const {buttonText , reference} = Astro.props;
 ---
 
-<div>
-    <a href = {`/${reference}`}>
-        {buttonText}
-    </a>
-</div>
+<a href={`/${reference}`} class="inline-block">
+  <div class="z-20 border-2 bg-emerald-300 rounded-xl px-4 py-2 text-center hover:bg-red-400 active:scale-85 transition-all">
+    {buttonText}
+  </div>
+</a>
